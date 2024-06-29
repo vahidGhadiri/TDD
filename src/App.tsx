@@ -1,13 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Typography from "@mui/material/Typography";
 
 function App() {
   return (
-    <div className="App">
-      Test Driven Development with React and typescript
-    </div>
+    <Typography variant="h2" component="h2" data-test="heading">
+      TDD
+    </Typography>
   );
 }
-
-export default App;
+export default App

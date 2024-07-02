@@ -1,7 +1,9 @@
+beforeEach(() => {
+    cy.visit('http://localhost:3000/');
+})
+
 describe("Bookish Application", () => {
     it('Shows a book list', () => {
-        cy.visit('http://localhost:3000/');
-
         cy.get('div[data-test="book-list"]').should('exist');
 
         cy.get('div.book-item').should((books) => {
@@ -13,4 +15,5 @@ describe("Bookish Application", () => {
             )
         })
     })
+
 })

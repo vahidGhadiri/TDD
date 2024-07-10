@@ -1,20 +1,19 @@
 import Typography from "@mui/material/Typography";
-import { BookList, type Book } from "./components";
+import { BookList, type Book, BookListContainer } from "./components";
 
 
 const BOOKS: Book[] = [
   { name: "Refactoring" },
   { name: "Domain-driven design" }
 ]
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Typography variant='h2' component='h2' data-test='heading'>
+    <div>
+      <Typography variant='h2' component='h2' data-test='heading'>
         Bookish
       </Typography>
-      <BookList books={BOOKS} />
-    </>
-  )
+      <BookListContainer />
+    </div>
+  );
 }
 export default App
